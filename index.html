@@ -2,28 +2,24 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>여주자연팜 체험</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>여주자연팜 체험 인증</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>여주자연팜 체험 인증</h1>
-        <img id="map" src="map.png" alt="체험 지도" class="image"/>
-        <form id="missionForm">
-            <label for="photo">📸 인증 사진 업로드:</label>
-            <input type="file" id="photo" accept="image/*" required/>
-            <label for="review">✍ 한줄 소감:</label>
-            <textarea id="review" placeholder="어땠나요?" required></textarea>
-            <button type="submit">꼬마농부 뱃지 받기</button>
-        </form>
-        <div id="result" class="hidden">
-            <h2>🎉 고구마 뱃지 획득!</h2>
-            <img src="badge.png" alt="고구마 뱃지" class="badge"/>
-            <p class="challenge">다음 뱃지에도 도전해볼까요?</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <h1>🍠 여주자연팜 체험 인증 완료!</h1>
+  <canvas id="confetti-canvas"></canvas>
+  <img src="badge.png" alt="꼬마농부 뱃지" class="badge">
+  <p class="message">🎉 축하합니다! 꼬마농부 고구마 뱃지를 획득했어요!</p>
+  <img src="barcode.png" alt="여주 농산물 할인 바코드" class="barcode">
+  <p class="barcode-text">🛒 여주 농산물 구매 시 10% 할인 쿠폰</p>
+  <button onclick="location.href='map.png'" class="next-button">🗺️ 다음 체험도 도전하기</button>
+
+  <div class="share-section">
+    <p>📸 인스타그램에 인증사진 공유해보세요!</p>
+    <a href="https://www.instagram.com" target="_blank" class="instagram-button">인스타그램 열기</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
