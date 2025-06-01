@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>여주자연팜 체험</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>여주자연팜 체험 인증</h1>
+        <img id="map" src="map.png" alt="체험 지도" class="image"/>
+        <form id="missionForm">
+            <label for="photo">📸 인증 사진 업로드:</label>
+            <input type="file" id="photo" accept="image/*" required/>
+            <label for="review">✍ 한줄 소감:</label>
+            <textarea id="review" placeholder="어땠나요?" required></textarea>
+            <button type="submit">꼬마농부 뱃지 받기</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>🎉 고구마 뱃지 획득!</h2>
+            <img src="badge.png" alt="고구마 뱃지" class="badge"/>
+            <p class="challenge">다음 뱃지에도 도전해볼까요?</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
